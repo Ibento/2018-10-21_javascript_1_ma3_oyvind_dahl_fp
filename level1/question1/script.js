@@ -38,6 +38,7 @@ $('#contactForm').submit(function (e) {
         validationResult += "* Your e-mail address("+emailInput.val()+") format is wrong. Please enter correct e-mail. \n";
     }
 
+    // If there was validation errors (Not empty result string) prevent submit and log validation results
     if (validationResult !== "") {
         console.log(validationResult);
     
